@@ -1,9 +1,12 @@
-(1..100).each do |i|
-    puts "#{if i % 15 == 0
-                "FizzBuzz"
-            elsif i % 3 == 0
-                "Fizz"
-            elsif i % 5 == 0
-                "Buzz"
+
             
-          
+          numbers = 1..100
+numbers.each do |that_particular_number|
+  if that_particular_number % 3 == 0 && that_particular_number % 5 == 0
+    puts 'FIZZBUZZ'
+  elsif that_particular_number % 3 == 0
+    puts 'FIZZ'
+  elsif that_particular_number % 5 == 0
+    puts 'BUZZ'
+  end
+end
