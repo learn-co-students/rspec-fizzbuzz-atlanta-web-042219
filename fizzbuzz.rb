@@ -1,15 +1,7 @@
-def fizzbuzz?(num)
-  case
-  when num % 15 == 0 then "FizzBuzz"
-  when num % 3  == 0 then "Fizz"
-  when num % 5  == 0 then "Buzz"
-  else num
-  end
-end
-
-# Prints out FizzBuzz
-def fizz_buzz_to(limit)
-  1.upto(limit).each do |num|
-    puts fizzbuzz?(num)
-  end
+(1..100).each do |n|
+a = String.new
+a << "Fizz" if n%3 == 0
+a << "Buzz" if n%5 == 0
+a << n.to_s if a.empty?
+puts a
 end
