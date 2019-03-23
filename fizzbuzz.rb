@@ -1,17 +1,15 @@
-def fizz_buzz_3(max)
-  arr = []
-  (1..max).each do |n|
-    text = ""
-    if (n % 3 == 0)
-      text << "Fizz"
-    end
-    if (n % 5 == 0)
-      text << "Buzz"
-    end
-    if !((n % 3 == 0) || (n % 5 == 0))
-      text = n
-    end
-    arr << text
+def fizzbuzz?(num)
+  case
+  when num % 15 == 0 then "FizzBuzz"
+  when num % 3  == 0 then "Fizz"
+  when num % 5  == 0 then "Buzz"
+  else num
   end
-  return arr
+end
+
+# Prints out FizzBuzz
+def fizz_buzz_to(limit)
+  1.upto(limit).each do |num|
+    puts fizzbuzz?(num)
+  end
 end
