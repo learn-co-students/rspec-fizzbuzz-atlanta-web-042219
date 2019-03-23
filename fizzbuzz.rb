@@ -1,12 +1,15 @@
-
-            
-          numbers = 1..100
-numbers.each do |that_particular_number|
-  if that_particular_number % 3 == 0 && that_particular_number % 5 == 0
-    puts 'FIZZBUZZ'
-  elsif that_particular_number % 3 == 0
-    puts 'FIZZ'
-  elsif that_particular_number % 5 == 0
-    puts 'BUZZ'
+def fizz_buzz_1(max)
+  arr = []
+  (1..max).each do |n|
+    if ((n % 3 == 0) && (n % 5 == 0))
+      arr << "FizzBuzz"
+    elsif (n % 3 == 0)
+      arr << "Fizz"
+    elsif (n % 5 == 0)
+      arr << "Buzz"
+    else
+      arr << n
+    end
   end
+  return arr
 end
