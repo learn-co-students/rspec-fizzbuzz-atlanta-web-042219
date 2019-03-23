@@ -1,7 +1,1 @@
-(1..100).each do |n|
-a = String.new
-a << "Fizz" if n%3 == 0
-a << "Buzz" if n%5 == 0
-a << n.to_s if a.empty?
-puts a
-end
+p (1..100).map{|i|o="";o<<"Fizz" if i%3==0;o<<"Buzz" if i%5==0;o<<i.to_s if o=="";o}
