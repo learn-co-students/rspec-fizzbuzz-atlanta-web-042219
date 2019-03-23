@@ -5,6 +5,5 @@
                 "Fizz"
             elsif i % 5 == 0
                 "Buzz"
-            else
-                i
+            
           
