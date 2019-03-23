@@ -16,9 +16,10 @@ describe "fizzbuzz" do
     fizz_15 = fizzbuzz(15)
 
     expect(fizz_15).to eq("FizzBuzz")
-  end
+
   it 'returns nil when the number is not divisible by 3 or 5' do
     fizz_4 = fizzbuzz(4)
 
     expect(fizz_4).to eq(nil)
 
+end 
