@@ -3,13 +3,13 @@
 def fizzbuzz(value)
   if value % 15 == 0
     "FizzBuzz"
-  end
+
   elsif value % 3 == 0
     "Fizz"
-  end
+
   elsif value % 5 == 0
     "Buzz"
-  end
+
   else
     NIL
 end
