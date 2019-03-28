@@ -10,6 +10,4 @@ def fizzbuzz(value)
   elsif value % 5 == 0
     "Buzz"
 
-  else
-    nil
 end
