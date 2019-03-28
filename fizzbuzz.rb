@@ -2,9 +2,11 @@
 # See README.md for instructions on how to do this
 def fizzbuzz(value)
 
-  if value % 3 == 0
-    "Fizz"
+  if value % 3 == 0 && value % 5 == 0
+    "FizzBuzz"
   elsif value % 5 == 0
     "Buzz"
+  elsif vlaue % 3 == 0
+    "Fizz"
   end
 end
